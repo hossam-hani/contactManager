@@ -28,7 +28,7 @@ class Contact extends Component {
           return (
             <div className="card mb-3">
               <div className="card-header">
-                <h3>
+                <h5>
                   {name}
                   <i
                     className={
@@ -45,15 +45,14 @@ class Contact extends Component {
                   />
                   <Link to={`/contact/edit/${id}`}>
                     <i
-                      className="fas fa-edit text-info"
+                      className="fas fa-edit text-primary"
                       style={{
                         float: "right",
-                        color: "green",
                         cursor: "pointer"
                       }}
                     />
                   </Link>
-                </h3>
+                </h5>
               </div>
               {showContactInfo ? (
                 <div className="card-body">
