@@ -5,43 +5,13 @@ import { NavLink } from "react-router-dom";
 
 const Header = props => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-      <a className="navbar-brand">{props.brand}</a>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <NavLink
-              className="nav-link"
-              exact
-              activeClassName="nav-link active"
-              to="/"
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              className="nav-link"
-              activeClassName="nav-link active"
-              to="/about"
-            >
-              About
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink
-              className="nav-link"
-              activeClassName="nav-link active"
-              to="/contact/add"
-            >
-              Add Contact
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+        <a href="#" className="navbar-brand">
+          {props.brand}
+        </a>
+      </nav>
+    </div>
   );
 };
 
