@@ -13,7 +13,7 @@ class Contact extends Component {
   };
 
   onDeleteHandler = async (dispatch, id) => {
-    axios.delete("http://jsonplaceholder.typicode.com/users/1");
+    axios.delete("https://jsonplaceholder.typicode.com/users/1");
     dispatch({ type: "DELETE_CONTACT", payload: { id: id } });
   };
 

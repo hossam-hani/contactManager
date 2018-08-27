@@ -46,7 +46,7 @@ export default class AddContact extends Component {
     const { id } = this.props.match.params;
 
     const res = await axios.put(
-      `http://jsonplaceholder.typicode.com/users/${id}`,
+      `https://jsonplaceholder.typicode.com/users/${id}`,
       newContact
     );
     dispatch({ type: "EDIT_CONTACT", payload: res.data });
