@@ -6,9 +6,7 @@ import { NavLink } from "react-router-dom";
 const Header = props => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-      <a className="navbar-brand" href="index3.html">
-        {props.brand}
-      </a>
+      <a className="navbar-brand">{props.brand}</a>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">

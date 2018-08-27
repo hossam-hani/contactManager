@@ -63,7 +63,7 @@ export default class AddContact extends Component {
   async componentDidMount() {
     const { id } = this.props.match.params;
     const res = await axios.get(
-      `http://jsonplaceholder.typicode.com/users/${id}`
+      `https://jsonplaceholder.typicode.com/users/${id}`
     );
     const { name, email, phone } = res.data;
     this.setState({
