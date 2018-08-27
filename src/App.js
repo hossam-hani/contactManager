@@ -9,6 +9,7 @@ import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import About from "./components/pages/about";
 import NotFound from "./components/pages/NotFound";
 import EditContact from "./components/Contacts/EditContact";
+import Navigator from "./components/layouts/navigator";
 class App extends Component {
   render() {
     return (
@@ -17,41 +18,7 @@ class App extends Component {
           <div className="App">
             <Header brand="Contact Manager" />
             <div className="container">
-              <ul className="nav nav-pills mb-3">
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link "
-                    exact
-                    activeClassName="nav-link active"
-                    to="/"
-                  >
-                    Home
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link "
-                    exact
-                    activeClassName="nav-link active"
-                    to="/about"
-                  >
-                    About
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link "
-                    exact
-                    activeClassName="nav-link active"
-                    to="/contact/add"
-                  >
-                    Add Contact
-                  </NavLink>
-                </li>
-              </ul>
-
+              <Navigator />
               <Switch>
                 <Route exact path="/" component={Contatcs} />
                 <Route exact path="/about" component={About} />
